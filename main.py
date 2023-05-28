@@ -12,6 +12,12 @@ pdf.cell(w=50, h=12, txt="study materials", align="L", ln=1, border=0)
 pdf.cell(w=0, h=5, txt="/\\Hi There/\\", align="C", ln=1, border=0)  # ln = is breakline -> 1 * \n
 pdf.cell(w=0, h=2, txt="/*   _      * \\ ", align="C", ln=1, border=0)
 
+pdf.set_y(270)  # self promotion :)
+pdf.set_x(180)
+pdf.set_font("Times", "U", 11)
+pdf.cell(w=25, h=6, txt="From portfolio:", border=0, align="C",
+         link="https://s1fam-portfolio-home-at8i55.streamlit.app")
+
 
 df = pd.read_csv("topics.csv")  # df create
 pdf.set_auto_page_break(auto=False, margin=0)  # pages should not be broken automatically
